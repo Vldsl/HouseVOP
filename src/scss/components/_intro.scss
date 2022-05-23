@@ -1,0 +1,80 @@
+/*** Intro ***/
+.intro {
+	padding: 10% 0;
+	height: 100vh;
+	width: 100%;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// text-align: center;
+	background-color: #242b33;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	.container {
+		// display: flex;
+		// flex: 1;
+	}
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	&__title {
+		width: 55%;
+		margin-bottom: 100px;
+		font-family: "Playfair Display", sans-serif;
+		@include font-source-sans(3rem, 1.3em, 700, #dac17f);
+	}
+	&__btn {
+		position: relative;
+		margin-bottom: 200px;
+		width: 20px;
+		height: 36px;
+		border-radius: 10px;
+		border: 3px solid $gold;
+		span {
+			width: 2.5px;
+			height: 8px;
+			background-color: $gold;
+			border-radius: 10px;
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__box {
+		// display: flex;
+		// align-items: flex-end;
+		// justify-content: center;
+		gap: 60px;
+	}
+	&__contact {
+		position: relative;
+		padding: 0 0 0 30px;
+		& + & {
+			margin-left: 100px;
+		}
+		&:hover {
+			color: $gold;
+		}
+		&:before {
+			// font-family: icons;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 1.3em;
+			color: inherit;
+		}
+	}
+	// .cta-map {
+	// 	content: "\e901";
+	// }
+	// .cta-number {
+	// 	content: "\e900";
+	// }
+}

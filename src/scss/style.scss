@@ -1,0 +1,66 @@
+@import "vars";
+/*--------------------*/
+/*** Mixins ***/
+@import "mixins";
+/*--------------------*/
+/*** Null ***/
+@import "null";
+@import "normalize";
+/*--------------------*/
+/*** Fonts ***/
+@import "fonts";
+@import "iconsfont";
+/*--------------------*/
+a,
+button {
+	transition: 0.2s;
+}
+body {
+	font-family: "Raleway", sans-serif;
+	@include font-source-sans($fz, 1.1em, 400, $white);
+	background-color: #242b33;
+	font-style: normal;
+	text-align: left;
+	position: relative;
+	&.lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	width: 100%;
+	max-width: 1130px;
+	margin: auto;
+	padding: 0 15px;
+}
+.page {
+	flex: 1 1 auto;
+}
+section {
+	margin-bottom: 30px;
+}
+.section__title {
+	margin-bottom: 100px;
+	font-family: "Playfair Display";
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 48px;
+	color: #d4c17f;
+}
+
+@import "components/header";
+@import "components/intro";
+@import "components/testimonials";
+@import "components/appartments";
+@import "components/contact";
+@import "components/video";
+@import "components/maps";
+@import "components/questions";
+@import "components/footer";

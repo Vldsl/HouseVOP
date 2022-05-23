@@ -1,0 +1,39 @@
+.questions {
+	width: 100%;
+	margin-bottom: 180px;
+	&__inner {
+
+	}
+	.form {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		&__input {
+			width: 24%;
+			height: 50px;
+			padding: 0.5em;
+			background: rgba($color: $white, $alpha: .2);
+			@include font-source-sans($fz, 1.93em);
+			text-align: center;
+			&::placeholder {
+				color: #bebebe;
+			}
+			&:focus {
+				color: $gold;
+			}
+		}
+		&__txt {
+			width: 24%;
+			@include font-source-sans(0.8125rem, 1.23em);
+		}
+		&__btn {
+			width: 24%;
+			height: 50px;
+			padding: 0.5em;
+			background-color: $gold;
+			@include font-source-sans(1rem, 1.6875em, 700);
+		}
+	}
+}

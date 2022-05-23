@@ -1,0 +1,9 @@
+section.questions
+	.container
+		h2.section__title Есть вопросы?
+		.questions__inner
+			form.form(action="" method="POST" enctype="multipart/form-data" novalidate)
+				p.form__txt *Мы&nbsp;никому не&nbsp;передаем ваши данные. И&nbsp;не&nbsp;сохраняем ваш номер в&nbsp;базу.
+				input.form__input#name(type="text" name="username" value="" placeholder="Ваше имя" required)
+				input.form__input#phone(type="text" name="phone" value="" placeholder="Ваш телефон" required)
+				button.form__btn(type="submit") Посмотреть район
